@@ -33,8 +33,9 @@ Ce projet comprend des Dockerfiles pour le client et le serveur, qui facilitent 
 ## Images Docker
 Les images Docker créées pour ce projet sont les suivantes :
 
-- **Image du Client** : `client-image`
-- **Image du Serveur** : `server-image`
+- **Image du Client** : `node:lts-alpine`
+- **Image du Serveur** : `node:lts-alpine`
+- **Image de la Base de Données** : `mongo:latest`
 
 Ces images sont spécifiées dans les Dockerfiles respectifs et sont utilisées lors de la construction et du déploiement des services.
 
