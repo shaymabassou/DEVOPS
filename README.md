@@ -1,4 +1,4 @@
-# Application MERN
+# MERN APP
 
 ## Vue d'Ensemble
 Ce projet est une application full-stack qui consiste en un client React et un serveur Node.js utilisant MongoDB comme base de données. Docker est utilisé pour la conteneurisation, et Docker Compose est utilisé pour orchestrer les services.
@@ -7,6 +7,8 @@ Ce projet est une application full-stack qui consiste en un client React et un s
 - [Technologies Utilisées](#technologies-utilisées)
 - [Variables d'Environnement](#variables-denvironnement)
 - [Configuration de Docker](#configuration-de-docker)
+- [Images Docker](#images-docker)
+- [Docker Compose](#docker-compose)
 - [Comment Exécuter le Projet](#comment-executer-le-projet)
 - [Contributions](#contributions)
 
@@ -29,6 +31,14 @@ Ce projet comprend des Dockerfiles pour le client et le serveur, qui facilitent 
   
 - **Serveur** : Un environnement Node.js qui installe les dépendances nécessaires et configure l'application pour écouter sur un port spécifique.
 
+## Images Docker
+Les images Docker créées pour ce projet sont les suivantes :
+
+- **Image du Client** : `client-image`
+- **Image du Serveur** : `server-image`
+
+Ces images sont spécifiées dans les Dockerfiles respectifs et sont utilisées lors de la construction et du déploiement des services.
+
 ## Docker Compose
 Docker Compose est utilisé pour gérer les différents services de l'application, y compris le client, le serveur et MongoDB. Les services sont interconnectés, ce qui permet une communication fluide entre le client et le serveur. Le fichier de configuration spécifie les images, les ports exposés, ainsi que les variables d'environnement nécessaires pour chaque service.
 
@@ -44,11 +54,3 @@ Docker Compose est utilisé pour gérer les différents services de l'applicatio
 
 5. Accédez au client à [http://localhost:3000](http://localhost:3000).
 
-## Contributions
-N'hésitez pas à soumettre des problèmes ou des demandes de tirage pour améliorer ce projet.
-```
-
-### Utilisation du README :
-1. **Copier et Coller** : Vous pouvez copier ce texte dans un fichier nommé `README.md` à la racine de votre répertoire de projet.
-2. **Personnaliser** : Remplacez "Nom du Projet" par le nom réel de votre projet et modifiez les sections si nécessaire pour répondre aux spécificités de votre application.
-3. **Ajouter des Sections Supplémentaires** : Si votre projet nécessite des instructions ou une documentation supplémentaire, n'hésitez pas à ajouter des sections.
