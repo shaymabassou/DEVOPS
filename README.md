@@ -10,7 +10,6 @@ Ce projet est une application full-stack qui consiste en un client React et un s
 - [Images Docker](#images-docker)
 - [Docker Compose](#docker-compose)
 - [Comment Exécuter le Projet](#comment-executer-le-projet)
-- [Contributions](#contributions)
 
 ## Technologies Utilisées
 - **Frontend** : React
