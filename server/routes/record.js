@@ -53,7 +53,7 @@ recordRoutes.route("/record/add").post(async function (req, res) {
 });
 
 // Update a record by id
-recordRoutes.route("/record/:id").put(async function (req, res) {
+recordRoutes.route("/:id").put(async function (req, res) {
     const db_connect = dbo.getDb();
     const { name, position, level } = req.body;
 
@@ -85,7 +85,7 @@ recordRoutes.route("/record/:id").put(async function (req, res) {
 });
 
 // Delete a record by id
-recordRoutes.route("/record/:id").delete(async function (req, res) {
+recordRoutes.route("/:id").delete(async function (req, res) {
     const db_connect = dbo.getDb();
     const myquery = { _id: new ObjectId(req.params.id) };
 

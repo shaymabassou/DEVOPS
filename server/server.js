@@ -15,7 +15,8 @@ app.get("/", function(req, res) {
 dbo.connectToMongoDB(function (error) {
     if (error) throw error
 
-    app.listen(port, () => {
-        console.log("Server is running on port: " + port)
-    })
+   
+})
+app.listen(port, () => {
+    console.log("Server is running on port: " + port)
 })

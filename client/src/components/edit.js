@@ -46,7 +46,7 @@ export default function Edit() {
 
         const editedPerson = { ...form }
         const response = await fetch(`${process.env.REACT_APP_API_URL}/update/${params.id}`, {
-            method: "POST",
+            method: "PUT",
             headers: {
                 "Content-Type": "application/json"
             },
